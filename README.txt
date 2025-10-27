@@ -1,0 +1,1 @@
+The dimensions (w&h) of the SHT4x and STS4x models are the same, so we can just use one of them.
