@@ -322,6 +322,162 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Sensor_Humidity:SHT4x"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Value" "SHT4x"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Footprint" "Sensor_Humidity:Sensirion_DFN-4_1.5x1.5mm_P0.8mm_SHT4x_NoCentralPad"
+				(at 3.81 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://sensirion.com/media/documents/33FD6951/624C4357/Datasheet_SHT4x.pdf"
+				(at 3.81 -8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "Digital Humidity and Temperature Sensor, ±1%RH, ±0.1°C, I2C, 1.08-3.6V, 16bit, DFN-4"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Sensirion environment environmental measurement digital SHT40 SHT41 SHT45"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Sensirion?DFN*1.5x1.5mm*P0.8mm*SHT4x*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SHT4x_1_1"
+				(rectangle
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 7.62 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 -7.62 90)
+					(length 2.54)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -538,29 +694,228 @@
 		)
 	)
 	(junction
-		(at 154.94 102.87)
+		(at 142.24 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "430efa1a-030a-4ed6-976d-a609cd740a90")
+		(uuid "00645b8a-70ce-44bf-a614-4f54683b2375")
 	)
 	(junction
-		(at 154.94 113.03)
+		(at 142.24 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "be39bc54-d5ed-4994-9e00-7e0ba2f25e74")
+		(uuid "8098f1dc-cf42-4d52-83ab-eb5104d2ac2d")
+	)
+	(junction
+		(at 132.08 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "82f9e845-d34b-4046-8fd0-d16c8e2d217e")
+	)
+	(junction
+		(at 132.08 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a0919d88-0f10-4296-933d-d64ebfcc5d26")
+	)
+	(wire
+		(pts
+			(xy 125.73 67.31) (xy 125.73 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b3ada21-d1b9-4bfb-973e-33ad15cc2c79")
+	)
+	(wire
+		(pts
+			(xy 157.48 82.55) (xy 142.24 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10234844-860f-46ec-9eaa-62e121d0a040")
+	)
+	(wire
+		(pts
+			(xy 156.21 59.69) (xy 157.48 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d529add-8da4-4abd-ba57-236264a0328d")
+	)
+	(wire
+		(pts
+			(xy 156.21 69.85) (xy 156.21 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ef04305-b6cb-49c3-8952-5f99e2c47772")
+	)
+	(wire
+		(pts
+			(xy 124.46 85.09) (xy 132.08 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69b3c0e9-7355-454a-806f-b30479100ba0")
+	)
+	(wire
+		(pts
+			(xy 156.21 97.79) (xy 142.24 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a21931d1-abcb-4ea3-bbbb-28430a0c6db4")
+	)
+	(wire
+		(pts
+			(xy 125.73 92.71) (xy 132.08 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d564200c-674a-4230-81ad-701c90c402ef")
+	)
+	(wire
+		(pts
+			(xy 125.73 62.23) (xy 124.46 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f202cdb0-8dc0-41e6-b5f2-cdaf05f524a3")
+	)
+	(wire
+		(pts
+			(xy 124.46 62.23) (xy 124.46 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f387a0ed-4c0a-4de3-ba7f-9a25a6821ae0")
+	)
+	(wire
+		(pts
+			(xy 132.08 85.09) (xy 132.08 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6a3a103-0061-4d59-8d55-013b3b201ef4")
+	)
+	(wire
+		(pts
+			(xy 157.48 59.69) (xy 157.48 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9583091-d03d-4c41-bbd7-fe6f04141e4c")
+	)
+	(symbol
+		(lib_id "Sensor_Humidity:SHT4x")
+		(at 139.7 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1c35c684-d0e8-4a31-8570-888a008ad36c")
+		(property "Reference" "U1"
+			(at 146.05 88.8999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SHT4x"
+			(at 146.05 91.4399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Sensor_Humidity:Sensirion_DFN-4_1.5x1.5mm_P0.8mm_SHT4x_NoCentralPad"
+			(at 143.51 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://sensirion.com/media/documents/33FD6951/624C4357/Datasheet_SHT4x.pdf"
+			(at 143.51 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "Digital Humidity and Temperature Sensor, ±1%RH, ±0.1°C, I2C, 1.08-3.6V, 16bit, DFN-4"
+			(at 139.7 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3754d89f-f024-4899-b8c8-e2b0ed924616")
+		)
+		(pin "2"
+			(uuid "6512c732-1181-497a-b05c-75171f442d56")
+		)
+		(pin "4"
+			(uuid "855e9638-0ba2-4866-bbef-7c152ab7b380")
+		)
+		(pin "3"
+			(uuid "dca1fa55-dd19-49ef-b966-cb82ce3ac80e")
+		)
+		(instances
+			(project ""
+				(path "/0898e9af-0e77-4e71-acdb-afc6ddff82b5"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 154.94 105.41 180)
+		(at 144.78 82.55 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "2d176e40-2049-45fe-986c-45bfddbdeeb1")
 		(property "Reference" "H3"
-			(at 157.48 105.4099 0)
+			(at 147.574 79.248 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -569,7 +924,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 157.48 107.9499 0)
+			(at 165.862 82.55 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -578,7 +933,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
-			(at 154.94 105.41 0)
+			(at 144.78 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -587,7 +942,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 154.94 105.41 0)
+			(at 144.78 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -596,7 +951,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 154.94 105.41 0)
+			(at 144.78 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -618,7 +973,7 @@
 	)
 	(symbol
 		(lib_id "power:VSS")
-		(at 154.94 113.03 270)
+		(at 142.24 97.79 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -627,7 +982,7 @@
 		(fields_autoplaced yes)
 		(uuid "41bc640d-b154-4333-acc4-2b44e3370f53")
 		(property "Reference" "#PWR03"
-			(at 151.13 113.03 0)
+			(at 138.43 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -636,7 +991,7 @@
 			)
 		)
 		(property "Value" "VSS"
-			(at 158.75 113.0299 90)
+			(at 146.05 97.7899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -645,7 +1000,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 154.94 113.03 0)
+			(at 142.24 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -654,7 +1009,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 154.94 113.03 0)
+			(at 142.24 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -663,7 +1018,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VSS\""
-			(at 154.94 113.03 0)
+			(at 142.24 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -684,8 +1039,153 @@
 		)
 	)
 	(symbol
+		(lib_id "STS4X:STS4X")
+		(at 140.97 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4631d56d-365f-44c2-b72c-f3ff256e5265")
+		(property "Reference" "U2"
+			(at 140.97 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "STS4X"
+			(at 140.97 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "STS4X:STS4X"
+			(at 140.97 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 140.97 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 140.97 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "1649-STS40-AD1B-R3CT-ND"
+			(at 140.97 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/STS40-AD1B-R3/Sensirion/view-part/?ref=snap"
+			(at 140.97 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "Digital Temperature Sensor, ±0.2 °C, Ultra-Low-Power, I2C fast mode plus"
+			(at 140.97 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MF" "Sensirion"
+			(at 140.97 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "DFN-4 Sensirion"
+			(at 140.97 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/STS40-AD1B-R3/Sensirion/view-part/?ref=eda"
+			(at 140.97 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "STS40-AD1B-R3"
+			(at 140.97 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4e8b01ee-25a2-42e7-a702-a602f34cf622")
+		)
+		(pin "4"
+			(uuid "5a0bf178-c28b-4b4a-8d7d-1989c98672a8")
+		)
+		(pin "3"
+			(uuid "afac10b1-3f8b-42e4-ae52-b24b369ea708")
+		)
+		(pin "2"
+			(uuid "bf049645-a2f6-42db-86c8-c31ced6391f3")
+		)
+		(instances
+			(project ""
+				(path "/0898e9af-0e77-4e71-acdb-afc6ddff82b5"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 154.94 115.57 180)
+		(at 142.24 100.33 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -694,7 +1194,7 @@
 		(fields_autoplaced yes)
 		(uuid "7c983c8b-ec3e-4421-8c0e-26c8a9435ffb")
 		(property "Reference" "H4"
-			(at 157.48 115.5699 0)
+			(at 144.78 100.3299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -703,7 +1203,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 157.48 118.1099 0)
+			(at 144.78 102.8699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -712,7 +1212,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
-			(at 154.94 115.57 0)
+			(at 142.24 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -721,7 +1221,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 154.94 115.57 0)
+			(at 142.24 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -730,7 +1230,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 154.94 115.57 0)
+			(at 142.24 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -752,7 +1252,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 121.92 105.41 90)
+		(at 129.54 87.63 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -761,7 +1261,7 @@
 		(fields_autoplaced yes)
 		(uuid "7ef71280-b476-4290-bffe-8b8b7be1245f")
 		(property "Reference" "H1"
-			(at 120.65 99.06 90)
+			(at 128.27 81.28 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -769,7 +1269,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 120.65 101.6 90)
+			(at 128.27 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -777,7 +1277,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
-			(at 121.92 105.41 0)
+			(at 129.54 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -786,7 +1286,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 121.92 105.41 0)
+			(at 129.54 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -795,7 +1295,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 121.92 105.41 0)
+			(at 129.54 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -817,7 +1317,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 121.92 110.49 90)
+		(at 129.54 92.71 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -826,7 +1326,7 @@
 		(fields_autoplaced yes)
 		(uuid "85d5af5d-d3a2-40cf-bc57-ec733e285fc5")
 		(property "Reference" "H2"
-			(at 120.65 104.14 90)
+			(at 128.27 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -834,7 +1334,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 120.65 106.68 90)
+			(at 128.27 88.9 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -842,7 +1342,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
-			(at 121.92 110.49 0)
+			(at 129.54 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -851,7 +1351,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 121.92 110.49 0)
+			(at 129.54 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -860,7 +1360,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 121.92 110.49 0)
+			(at 129.54 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -882,7 +1382,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 154.94 102.87 90)
+		(at 142.24 82.55 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -891,7 +1391,7 @@
 		(fields_autoplaced yes)
 		(uuid "8c64da99-7887-47d2-9fb4-0a32b1624015")
 		(property "Reference" "#PWR02"
-			(at 161.29 102.87 0)
+			(at 142.24 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -900,7 +1400,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 158.75 102.8699 90)
+			(at 142.2399 78.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -909,7 +1409,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 154.94 102.87 0)
+			(at 142.24 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -918,7 +1418,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 154.94 102.87 0)
+			(at 142.24 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -927,7 +1427,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 154.94 102.87 0)
+			(at 142.24 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -942,151 +1442,6 @@
 			(project ""
 				(path "/0898e9af-0e77-4e71-acdb-afc6ddff82b5"
 					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "STS4X:STS4X")
-		(at 139.7 107.95 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c00ce775-6af3-493d-a7f7-cd8583070c7d")
-		(property "Reference" "U1"
-			(at 139.7 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "STS4X"
-			(at 139.7 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "STS4X:STS4X"
-			(at 139.7 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 139.7 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 139.7 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey_Part_Number" "1649-STS40-AD1B-R3CT-ND"
-			(at 139.7 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/STS40-AD1B-R3/Sensirion/view-part/?ref=snap"
-			(at 139.7 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "Digital Temperature Sensor, ±0.2 °C, Ultra-Low-Power, I2C fast mode plus"
-			(at 139.7 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MF" "Sensirion"
-			(at 139.7 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "DFN-4 Sensirion"
-			(at 139.7 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/STS40-AD1B-R3/Sensirion/view-part/?ref=eda"
-			(at 139.7 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "STS40-AD1B-R3"
-			(at 139.7 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "20fed1f9-0cb5-4c55-b097-53cf1c924fec")
-		)
-		(pin "2"
-			(uuid "38bc4019-1660-4d23-8fb6-aaa0c39d6007")
-		)
-		(pin "3"
-			(uuid "2f8784e0-3b2d-46c2-a9b9-8977c2aab12b")
-		)
-		(pin "4"
-			(uuid "1a8924ec-8229-46a8-93c3-5bd2636f03ff")
-		)
-		(instances
-			(project ""
-				(path "/0898e9af-0e77-4e71-acdb-afc6ddff82b5"
-					(reference "U1")
 					(unit 1)
 				)
 			)
