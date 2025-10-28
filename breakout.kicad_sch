@@ -237,8 +237,8 @@
 			)
 			(symbol "STS4X_0_0"
 				(rectangle
-					(start -10.16 -7.62)
-					(end 10.16 7.62)
+					(start -10.16 7.62)
+					(end 10.16 -7.62)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -579,6 +579,107 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:GND1"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND1"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND1_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND1_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:VSS"
 			(power)
 			(pin_numbers
@@ -694,10 +795,10 @@
 		)
 	)
 	(junction
-		(at 142.24 82.55)
+		(at 156.21 127)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "00645b8a-70ce-44bf-a614-4f54683b2375")
+		(uuid "76a291f8-d381-4646-b97c-cc9ce1b74855")
 	)
 	(junction
 		(at 142.24 97.79)
@@ -706,126 +807,82 @@
 		(uuid "8098f1dc-cf42-4d52-83ab-eb5104d2ac2d")
 	)
 	(junction
-		(at 132.08 87.63)
+		(at 156.21 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "82f9e845-d34b-4046-8fd0-d16c8e2d217e")
+		(uuid "ad9e39fb-2cce-417f-853c-22d090aa8178")
 	)
 	(junction
-		(at 132.08 92.71)
+		(at 142.24 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a0919d88-0f10-4296-933d-d64ebfcc5d26")
+		(uuid "ed5cb4b8-e0d9-4f5a-bfd9-d99f64388af4")
 	)
-	(wire
-		(pts
-			(xy 125.73 67.31) (xy 125.73 92.71)
+	(symbol
+		(lib_id "power:GND")
+		(at 156.21 116.84 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1526b3a3-c898-48a4-ade8-0daf9da4348c")
+		(property "Reference" "#PWR01"
+			(at 156.21 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(stroke
-			(width 0)
-			(type default)
+		(property "Value" "GND"
+			(at 156.21 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
-		(uuid "0b3ada21-d1b9-4bfb-973e-33ad15cc2c79")
-	)
-	(wire
-		(pts
-			(xy 157.48 82.55) (xy 142.24 82.55)
+		(property "Footprint" ""
+			(at 156.21 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(stroke
-			(width 0)
-			(type default)
+		(property "Datasheet" ""
+			(at 156.21 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(uuid "10234844-860f-46ec-9eaa-62e121d0a040")
-	)
-	(wire
-		(pts
-			(xy 156.21 59.69) (xy 157.48 59.69)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 156.21 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(stroke
-			(width 0)
-			(type default)
+		(pin "1"
+			(uuid "6ad7cb06-b106-47b8-b065-4d21325338e1")
 		)
-		(uuid "2d529add-8da4-4abd-ba57-236264a0328d")
-	)
-	(wire
-		(pts
-			(xy 156.21 69.85) (xy 156.21 97.79)
+		(instances
+			(project ""
+				(path "/0898e9af-0e77-4e71-acdb-afc6ddff82b5"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
 		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4ef04305-b6cb-49c3-8952-5f99e2c47772")
-	)
-	(wire
-		(pts
-			(xy 124.46 85.09) (xy 132.08 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "69b3c0e9-7355-454a-806f-b30479100ba0")
-	)
-	(wire
-		(pts
-			(xy 156.21 97.79) (xy 142.24 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a21931d1-abcb-4ea3-bbbb-28430a0c6db4")
-	)
-	(wire
-		(pts
-			(xy 125.73 92.71) (xy 132.08 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d564200c-674a-4230-81ad-701c90c402ef")
-	)
-	(wire
-		(pts
-			(xy 125.73 62.23) (xy 124.46 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f202cdb0-8dc0-41e6-b5f2-cdaf05f524a3")
-	)
-	(wire
-		(pts
-			(xy 124.46 62.23) (xy 124.46 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f387a0ed-4c0a-4de3-ba7f-9a25a6821ae0")
-	)
-	(wire
-		(pts
-			(xy 132.08 85.09) (xy 132.08 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f6a3a103-0061-4d59-8d55-013b3b201ef4")
-	)
-	(wire
-		(pts
-			(xy 157.48 59.69) (xy 157.48 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f9583091-d03d-4c41-bbd7-fe6f04141e4c")
 	)
 	(symbol
 		(lib_id "Sensor_Humidity:SHT4x")
@@ -972,6 +1029,71 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 123.19 119.38 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "33a81a7e-1047-4b93-9186-409ffd95be6f")
+		(property "Reference" "H5"
+			(at 121.92 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 121.92 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
+			(at 123.19 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 123.19 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 123.19 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dd049339-7d08-4314-a460-bc0bd66110bc")
+		)
+		(instances
+			(project ""
+				(path "/0898e9af-0e77-4e71-acdb-afc6ddff82b5"
+					(reference "H5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VSS")
 		(at 142.24 97.79 270)
 		(unit 1)
@@ -990,7 +1112,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VSS"
+		(property "Value" "VSS1"
 			(at 146.05 97.7899 90)
 			(effects
 				(font
@@ -1039,8 +1161,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 158.75 116.84 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "43a83a9b-8574-4b62-93d6-5dd321dd9f2d")
+		(property "Reference" "H7"
+			(at 162.56 115.5699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 162.56 118.1099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
+			(at 158.75 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 158.75 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 158.75 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "697ef499-3b63-4b6f-b573-768546bd38aa")
+		)
+		(instances
+			(project ""
+				(path "/0898e9af-0e77-4e71-acdb-afc6ddff82b5"
+					(reference "H7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "STS4X:STS4X")
-		(at 140.97 64.77 0)
+		(at 140.97 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1049,7 +1238,7 @@
 		(fields_autoplaced yes)
 		(uuid "4631d56d-365f-44c2-b72c-f3ff256e5265")
 		(property "Reference" "U2"
-			(at 140.97 52.07 0)
+			(at 140.97 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1057,7 +1246,7 @@
 			)
 		)
 		(property "Value" "STS4X"
-			(at 140.97 54.61 0)
+			(at 140.97 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1065,7 +1254,7 @@
 			)
 		)
 		(property "Footprint" "STS4X:STS4X"
-			(at 140.97 64.77 0)
+			(at 140.97 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1075,7 +1264,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 140.97 64.77 0)
+			(at 140.97 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1084,7 +1273,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 140.97 64.77 0)
+			(at 140.97 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1093,7 +1282,7 @@
 			)
 		)
 		(property "DigiKey_Part_Number" "1649-STS40-AD1B-R3CT-ND"
-			(at 140.97 64.77 0)
+			(at 140.97 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1103,7 +1292,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/STS40-AD1B-R3/Sensirion/view-part/?ref=snap"
-			(at 140.97 64.77 0)
+			(at 140.97 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1113,7 +1302,7 @@
 			)
 		)
 		(property "Description_1" "Digital Temperature Sensor, ±0.2 °C, Ultra-Low-Power, I2C fast mode plus"
-			(at 140.97 64.77 0)
+			(at 140.97 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1123,7 +1312,7 @@
 			)
 		)
 		(property "MF" "Sensirion"
-			(at 140.97 64.77 0)
+			(at 140.97 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1133,7 +1322,7 @@
 			)
 		)
 		(property "Package" "DFN-4 Sensirion"
-			(at 140.97 64.77 0)
+			(at 140.97 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1143,7 +1332,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/STS40-AD1B-R3/Sensirion/view-part/?ref=eda"
-			(at 140.97 64.77 0)
+			(at 140.97 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1153,7 +1342,7 @@
 			)
 		)
 		(property "MP" "STS40-AD1B-R3"
-			(at 140.97 64.77 0)
+			(at 140.97 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1178,6 +1367,139 @@
 			(project ""
 				(path "/0898e9af-0e77-4e71-acdb-afc6ddff82b5"
 					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 158.75 127 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "589a4e16-a420-4ac4-90fe-587524a6acf1")
+		(property "Reference" "H8"
+			(at 162.56 125.7299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 162.56 128.2699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
+			(at 158.75 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 158.75 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 158.75 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f9a249fb-a954-4730-99d4-a43be351b72a")
+		)
+		(instances
+			(project ""
+				(path "/0898e9af-0e77-4e71-acdb-afc6ddff82b5"
+					(reference "H8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VSS")
+		(at 156.21 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "748ca2df-e9c0-46f0-8d2b-a5290fa0635c")
+		(property "Reference" "#PWR04"
+			(at 156.21 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VSS"
+			(at 156.21 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VSS\""
+			(at 156.21 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9ff8c84c-1d48-4e36-aac0-affa587e1753")
+		)
+		(instances
+			(project ""
+				(path "/0898e9af-0e77-4e71-acdb-afc6ddff82b5"
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -1258,7 +1580,6 @@
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "7ef71280-b476-4290-bffe-8b8b7be1245f")
 		(property "Reference" "H1"
 			(at 128.27 81.28 90)
@@ -1381,7 +1702,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "power:GND1")
 		(at 142.24 82.55 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1389,8 +1710,8 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8c64da99-7887-47d2-9fb4-0a32b1624015")
-		(property "Reference" "#PWR02"
+		(uuid "9bab4b5c-0040-4965-90e5-fa24f3039e53")
+		(property "Reference" "#PWR05"
 			(at 142.24 76.2 0)
 			(effects
 				(font
@@ -1399,13 +1720,12 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 142.2399 78.74 90)
+		(property "Value" "GND1"
+			(at 142.24 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
@@ -1426,7 +1746,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
 			(at 142.24 82.55 0)
 			(effects
 				(font
@@ -1436,12 +1756,77 @@
 			)
 		)
 		(pin "1"
-			(uuid "679b95b9-72df-4a56-bf9b-f2d0144cdf7a")
+			(uuid "384886fd-905f-46b9-b602-dcc7c5a1c411")
 		)
 		(instances
 			(project ""
 				(path "/0898e9af-0e77-4e71-acdb-afc6ddff82b5"
-					(reference "#PWR02")
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 123.19 124.46 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dffe66a1-96a1-41b4-beee-e56480cc7b76")
+		(property "Reference" "H6"
+			(at 121.92 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 121.92 120.65 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
+			(at 123.19 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 123.19 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 123.19 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bbffaf7c-aee2-44d6-ba73-bbf3f4733c7f")
+		)
+		(instances
+			(project ""
+				(path "/0898e9af-0e77-4e71-acdb-afc6ddff82b5"
+					(reference "H6")
 					(unit 1)
 				)
 			)
